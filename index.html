@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .article-box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        ol {
+            list-style-type: upper-roman;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 125px;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .box {
+            background-color: dimgrey;
+            padding: 10px;
+            margin: 80px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            font-size: 17px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Best Class in WoW
+    </header>
+    <article class="article-box">
+        <h2>What's the best class in WoW?</h2>
+        <img src="https://i.pinimg.com/474x/29/ac/2b/29ac2bd5b549f738ad11c2c751e921fe.jpg" alt="Paladin B)">
+        <p>
+            <h1>Why of course it's Paladin! </h1>
+        </p>
+        <p>Did You think it would be something else..?</p>
+    </article>
+
+    <article class="article-box">
+        <h2>But You may ask ...</h2>
+        <p> <h1> why is that? </h1></p>
+        <img src="https://media.tenor.com/damu8hbJ19YAAAAm/shrug-emoji.webp" alt="Shrug">
+        <p>
+            <h1>Well it is so because: </h1>
+        </p>
+        <ol> 
+            <li> They are <strong>light</strong> boys</li>
+            <li> You don't need hands to play</li>
+            <li> You can ride <em>unicorns</em> </li>
+            <li> They are epic </li>
+        </ol>
+    <label for="taskProgress">Paladin aura loading:</label>
+    <progress id="taskProgress" value="70" max="100"></progress>
+    </article>
+
+    <table>
+        <caption>Not convinced? Look at this</caption>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Name</th>
+                <th>Level</th>
+                <th>Social credit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paladin</td>
+                <td>Billy</td>
+                <td>76</td>
+                <td>100101201020120</td>
+            </tr>
+            <tr>
+                <td>Paladin</td>
+                <td>Bobby</td>
+                <td>23</td>
+                <td>4444444444444444</td>
+            </tr>
+            <tr>
+                <td>Paladin</td>
+                <td>Bob</td>
+                <td>54</td>
+                <td>2137213721372137</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p> <h2> Now that's a lot of Social Credits !!!</h2></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUluP72ANdwx-rR8pUe7hD8DPW3bMFQ-H_Q&s" alt="Doge">
+
+    <details>
+        <summary>Press, to see more about paladin players</summary>
+        <h2>Here's a map showing how a typical Paladin player looks like on different continents</h2>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/800px-World_map_-_low_resolution.svg.png" 
+         alt="Mapa świata" usemap="#worldmap" width="800">
+
+    <map name="worldmap">
+        <area shape="rect" coords="420, 120, 470, 160" href="https://d-tv.ppstatic.pl/images/tv-tv/0a/89/prg1500402_831177465_original.jpg" alt="Europa">
+        
+        <area shape="rect" coords="100, 80, 250, 200" href="https://static.wikitide.net/1d6chanwiki/thumb/2/27/Colbert_paladin.jpg/1200px-Colbert_paladin.jpg" alt="Ameryka Północna">
+        
+        <area shape="rect" coords="500, 80, 700, 200" href="https://e7.pngegg.com/pngimages/568/999/png-clipart-metin2-warrior-player-versus-player-body-armor-game-warrior-middle-ages-weapon.png" alt="Azja">
+    </map>
+    </details>
+
+    <div class="box">
+        <h2>Share what's Your favourite class in WoW :) !</h2>
+        <form action="#" method="post">
+            <label for="class">Choose a class:</label>
+            <select id="class" name="class">
+                <optgroup label="Sigma">
+                    <option value="pal">Paladin</option>
+                </optgroup>
+                <optgroup label="Beta">
+                    <option value="ma">Mage</option>
+                    <option value="wa">Warrior</option>
+                    <option value="ro">Rogue</option>
+                    <option value="hu">Hunter</option>
+                    <option value="lo">Warlock</option>
+                    <option value="pr">Priest</option>
+                    <option value="dk">Death Knight</option>
+                    <option value="dudu">Druid</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+
+
+    <footer>
+        Cheers to my brother Adrian
+    </footer>
+</body>
+</html>
