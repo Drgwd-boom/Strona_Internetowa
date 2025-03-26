@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drgwd-booms's website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        Best Class in WoW
+<body class="bg-[#2c2c2c]">
+    <header class="bg-[#212121] text-4xl text-white py-[10px] text-center">
+        BEST CLASS IN WOW
     </header>
     <div class="flex-container center">
-        <article class="article-box">
+        <article class="article-box shadow-2xl p-8">
             <h2>What's the best class in WoW?</h2>
-            <img src="https://i.pinimg.com/474x/29/ac/2b/29ac2bd5b549f738ad11c2c751e921fe.jpg" alt="Paladin B)">
-            <h1>Why of course it's Paladin! </h1>
+            <img src="https://media1.giphy.com/media/14e27FhfQA3Yivhi6e/giphy.gif?cid=6c09b952bf8nxivjv1gfs5s82icmx2idt1glnwhufsm8q0qr&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Paladin B)">
+            <h1>Why of course it's Paladin!</h1>
             <p>Did You think it would be something else..?</p>
         </article>
-
-        <article class="article-box">
+        <article class="article-box shadow-2xl p-8">
             <h2>But You may ask ... why is that?</h2>
             <img src="https://media.tenor.com/damu8hbJ19YAAAAm/shrug-emoji.webp" alt="Shrug">
             <h1>Well it is so because: </h1>
@@ -28,48 +28,57 @@
                 <li> You can ride <em>unicorns</em> </li>
                 <li> They are epic </li>
             </ol>
-            <label for="taskProgress">Paladin aura loading:</label>
-            <progress id="taskProgress" value="70" max="100"></progress>
+            <div classname="flex items-center space-x-6">
+                <label htmlfor="taskProgress" classname="mr-4">Paladin aura loading:</label>
+                <progress id="taskProgress" value="70" max="100" class="w-48 mr-4"></progress>
+                <button type="button" classname="bg-indigo-500" disabled aria-label="Loading">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </button>
+            </div>
         </article>
     </div>
 
-    <div class="flex-container space-between">
-        <table>
-            <caption>Not convinced? Look at this</caption>
+        <div class="flex-container space-between">
+        <table class="table-auto w-3/4 mx-auto my-8 border-collapse border border-gray-300"> <!-- Użycie table-auto -->
+            <caption class="text-lg font-bold mb-4">Not convinced? Look at this</caption>
             <thead>
-                <tr>
-                    <th scope="col">Class</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Social credit</th>
+                <tr class="bg-[#444444]">
+                    <th scope="col" class="px-4 py-2 border border-gray-300">Class</th>
+                    <th scope="col" class="px-4 py-2 border border-gray-300">Name</th>
+                    <th scope="col" class="px-4 py-2 border border-gray-300">Level</th>
+                    <th scope="col" class="px-4 py-2 border border-gray-300">Social credit</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Paladin</td>
-                    <td>Billy</td>
-                    <td>76</td>
-                    <td>100101201020120</td>
+                <tr class="hover:bg-[#585858]">
+                    <td class="px-4 py-2 border border-gray-300">Paladin</td>
+                    <td class="px-4 py-2 border border-gray-300">Billy</td>
+                    <td class="px-4 py-2 border border-gray-300">76</td>
+                    <td class="px-4 py-2 border border-gray-300">100101201020120</td>
                 </tr>
-                <tr>
-                    <td>Paladin</td>
-                    <td>Bobby</td>
-                    <td>23</td>
-                    <td>4444444444444444</td>
+                <tr class="hover:bg-[#585858]">
+                    <td class="px-4 py-2 border border-gray-300">Paladin</td>
+                    <td class="px-4 py-2 border border-gray-300">Bobby</td>
+                    <td class="px-4 py-2 border border-gray-300">23</td>
+                    <td class="px-4 py-2 border border-gray-300">4444444444444444</td>
                 </tr>
-                <tr>
-                    <td>Paladin</td>
-                    <td>Bob</td>
-                    <td>54</td>
-                    <td>2137213721372137</td>
+                <tr class="hover:bg-[#585858]">
+                    <td class="px-4 py-2 border border-gray-300">Paladin</td>
+                    <td class="px-4 py-2 border border-gray-300">Bob</td>
+                    <td class="px-4 py-2 border border-gray-300">54</td>
+                    <td class="px-4 py-2 border border-gray-300">2137213721372137</td>
                 </tr>
             </tbody>
         </table>
-		<article class="article-box">
-			<h2> Now that's a lot of Social Credits !!! </h2>
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUluP72ANdwx-rR8pUe7hD8DPW3bMFQ-H_Q&s" alt="Doge">
-		</article>
+        <article class="article-box shadow-2xl p-8">
+            <h2> Now that's a lot of Social Credits !!! </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUluP72ANdwx-rR8pUe7hD8DPW3bMFQ-H_Q&s" alt="Doge">
+        </article>
     </div>
+
 	<article id="map-article" class="article-box">
 		<details>
 			<summary>Press, to see more about paladin players</summary>
@@ -84,33 +93,40 @@
 			</map>
 		</details>
 	</article>
-    <article class="article-box">
-        <h2>Share what's Your favourite class in WoW :) !</h2>
-        <form action="#" method="post">
-            <label for="class">Choose a class:</label>
-            <select id="class" name="class">
-                <optgroup label="Sigma">
-                    <option value="pal">Paladin</option>
-                </optgroup>
-                <optgroup label="Beta">
-                    <option value="ma">Mage</option>
-                    <option value="wa">Warrior</option>
-                    <option value="ro">Rogue</option>
-                    <option value="hu">Hunter</option>
-                    <option value="lo">Warlock</option>
-                    <option value="pr">Priest</option>
-                    <option value="dk">Death Knight</option>
-                    <option value="dudu">Druid</option>
-                </optgroup>
-            </select><br><br>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <button type="submit">Wyślij</button>
-        </form>
+    <article id="form-article" class="article-box">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-6 text-center">Share what's Your favourite class in WoW :) !</h2>
+            <form action="#" method="post" class="space-y-6">
+                <div class="form-group">
+                    <label for="class" class="block text-lg mb-2">Choose a class:</label>
+                    <select id="class" name="class" class="w-full p-3 bg-[#585858] border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 text-white">
+                        <optgroup label="Sigma" class="text-white">
+                            <option value="pal">Paladin</option>
+                        </optgroup>
+                        <optgroup label="Beta">
+                            <option value="ma">Mage</option>
+                            <option value="wa">Warrior</option>
+                            <option value="ro">Rogue</option>
+                            <option value="hu">Hunter</option>
+                            <option value="lo">Warlock</option>
+                            <option value="pr">Priest</option>
+                            <option value="dk">Death Knight</option>
+                            <option value="dudu">Druid</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="block text-lg mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required 
+                        class="w-full p-3 bg-[#585858] border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 text-white">
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200">
+                    Submit
+                </button>
+            </form>
+        </div>
     </article>
-    <footer>
+    <footer class="bg-[#212121] text-2xl text-white py-[10px] text-center">
         Cheers to my brother Adrian
     </footer>
 </body>
